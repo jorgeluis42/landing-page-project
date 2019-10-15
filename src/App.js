@@ -27,9 +27,9 @@ function App() {
 }
 
 const Home = () => (
-  <div>
+  
   <Userdisplay/>
-  </div>
+ 
 )
 
 export default App;
