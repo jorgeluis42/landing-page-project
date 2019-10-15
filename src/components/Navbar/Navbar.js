@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import logo from './React.js_logo-512.png'
-
+import {Link} from "react-router-dom";
 
 
 export default class Navbar extends Component {
     render() {
         return (
+          
             <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-              <a className="navbar-item" href="https://bulma.io">
-                <img src={logo} alt="didnt load" width="30" height="90"/>
-              </a>
+              <div className="navbar-item">
+                <img src='assets/images/1.png' alt="didnt load" width="30" height="90"/>
+              </div>
           
               <a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
@@ -21,22 +21,28 @@ export default class Navbar extends Component {
           
             <div id="navbarBasicExample" className="navbar-menu">
               <div className="navbar-start">
+              <Link to='/'>
                 <a className="navbar-item">
                   Home
                 </a>
-          
+                </Link>
+                <Link to='/project'>
                 <a className="navbar-item">
                   Projects
                 </a>
+                </Link>
+                <Link to='/contact'>
                 <a className="navbar-item">
                   Contact Me
                 </a>
+                </Link>
                 </div>
                 
           
               
             </div>
           </nav>
+          
         )
     }
 }
