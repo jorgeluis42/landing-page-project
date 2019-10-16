@@ -10,6 +10,8 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     padding: theme.spacing(2),
+    marginTop: '30px',
+    opacity: .8,
     margin: 'auto',
     maxWidth: 500,
   },

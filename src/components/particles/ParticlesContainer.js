@@ -39,10 +39,16 @@ render() {
                 ],
                 "images": [
                     {
-                        "src": "code.b3b4c4f4.png",
+                        "src": "assets/images/code.b3b4c4f4.png",
+                        "height": 20,
+                        "width": 23
+                    }, 
+                    {
+                        "src": "assets/images/react.js_logo-512.png",
                         "height": 20,
                         "width": 23
                     },
+                    
                 ]
             },
             "color": {

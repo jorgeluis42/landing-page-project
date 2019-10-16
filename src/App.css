@@ -2,27 +2,17 @@ h1{
     color: white;
 }
 
-#userinfo2{
-  padding: 340;
-}
 
-  .App {
-    background: #000000;
-    max-width: 100vw;
-    max-height: 100vh;
-    display: grid;
-    grid-gap: 2rem;
-    padding: 2rem;
-    grid: 'h c '
-          'h c '
-          'h c ';
-  }
   .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto;
     grid-gap: 30px;
     padding: 50px;
     align-content: center;
+  }
+
+  .MuiChip-root{
+    background-color: #f3f9fb !important;
   }
   
   .grid-container  {
@@ -31,6 +21,7 @@ h1{
     text-align: center;
     padding: 0px 0 20;
     font-size: 30px;
+    border-radius: 4px;
   }
   
   .item1 {
@@ -44,7 +35,7 @@ h1{
   
   .contact_container {
     padding: 12px 24px 24px 24px;
-    margin: 48px 12px;
+    margin: 48px auto;
     background: white;
     opacity: .9;
     border-radius: 4px;
