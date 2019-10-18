@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -32,6 +32,19 @@ const useStyles = makeStyles(theme => ({
 
 export default function ComplexGrid() {
   const classes = useStyles();
+  const [userdata, setUserData] = useState({
+    firstName: '',
+    lastName: '',
+    image: '',
+    email: '',
+    phoneNumber: '',
+    City: '',
+    github: '',
+    linkedin: '',
+    description: '',
+    skills: []
+
+  })
 
   return (
     <div id="userinfo1">
@@ -39,29 +52,29 @@ export default function ComplexGrid() {
         <Grid container spacing={2}>
           <Grid item>
             <ButtonBase className={classes.image}>
-              <img className={classes.img} alt="complex" src="assets/images/1.png" />
+              <img className={classes.img} alt="complex" src={userdata.image} />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                  Jorge Luis
+                  {userdata.firstName} {userdata.lastName}
                 </Typography>
                 <Typography variant="body2">
-                  jorge.luis4212@gmail.com
+                {userdata.email}
                 </Typography>
                 <Typography variant="body2">
-                  (305) 720-6352
+                {userdata.phoneNumber}
                 </Typography>
                 <Typography variant="body2">
-                  Miami,FL
+                {userdata.city}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                github.com/jorgeluis42
+                {userdata.github}
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                linkedin.com/in/jorge-luis42/
+                {userdata.linkedin}
                 </Typography>
               </Grid>
             </Grid>

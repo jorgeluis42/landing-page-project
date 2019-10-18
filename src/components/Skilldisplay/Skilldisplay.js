@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ComplexGrid() {
+export default function ComplexGrid(prop) {
   const classes = useStyles();
 
   return (
@@ -31,7 +31,7 @@ export default function ComplexGrid() {
               <Typography gutterBottom variant="subtitle1">
                  Technical Skills:
                 </Typography>
-               <Skillcards/>
+               <Skillcards skills = {prop.skills}/>
               </Grid>
             </Grid>
           </Grid>

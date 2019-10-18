@@ -27,8 +27,11 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function ComplexGrid() {
+export default function ComplexGrid(prop) {
   const classes = useStyles();
+
+
+
 
   return (
     <div  id="userinfo2">
@@ -38,9 +41,7 @@ export default function ComplexGrid() {
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
                 <Typography gutterBottom variant="subtitle1">
-                I identify myself as a problem solver and creator who seeks the opportunity to use any resources or tools to build effective business
-solution. My objective is to utilize my skills and knowledge to create websites and applications that will be enjoyed by thousands of users.
-I’m looking forward to being part of a talented team that I can contribute to and grow with professionally.
+                  {prop.description}
                 </Typography>
               </Grid>
             </Grid>
